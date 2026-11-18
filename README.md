@@ -96,7 +96,7 @@ El sistema se divide en tres subsistemas principales:
 
 ### Diagrama de Bloques
 
-
+```text
 +-----------------------------------+
 |      Fuente de Alimentación       |
 |   (Lógica: 5V | Potencia: 12V+)   |
@@ -116,12 +116,11 @@ El sistema se divide en tres subsistemas principales:
 | Parada (ISR)|       | Electroimán |
 +-------------+       |  (Vía/Tren) |
                       +-------------+
+```
 
-
-
-## Arquitectura Modular del Software
 El software de control está diseñado bajo un enfoque modular orientado a objetos, dividido en cuatro capas funcionales independientes para facilitar el desarrollo colaborativo y las pruebas unitarias
 
+```text
 +-----------------------------------------------------------------------------+
 |                  CAPA 4: INTERFAZ Y TELEMETRÍA (HMI / Logs)                 |
 |  - Monitoreo en tiempo real (velocidad, brecha de aire, consumo energético) |
@@ -153,3 +152,4 @@ El software de control está diseñado bajo un enfoque modular orientado a objet
 |  - Sensores inductivos de distancia (Air Gap) y sensores de corriente       |
 |  - Electroimanes de guía, estátor lineal en vía y patines de emergencia     |
 +-----------------------------------------------------------------------------+
+```
